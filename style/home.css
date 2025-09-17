@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.destaque {
+  color: #2f86d6;
+}
+
+.destaque-banner {
+  color: #ffffff;
+  background: linear-gradient(45deg, #ffffff, rgba(255, 255, 255, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.limitar-secao {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-topo {
+  position: relative;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topo-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topo-logo h1 {
+  font-size: 32px;
+  color: #233032;
+}
+
+.topo-logo p {
+  color: #2f86d6;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.topo-links {
+  display: flex;
+  gap: 30px;
+}
+
+.topo-links a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #233032;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.topo-links a:hover {
+  color: #2f86d6;
+}
+
+.topo-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #2f86d6;
+  transition: all 0.3s ease;
+}
+
+.topo-links a:hover::after {
+  width: 100%;
+}
+
+.menu-mobile {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #233032;
+  cursor: pointer;
+}
+
+.secao-banner {
+  background: linear-gradient(135deg, #2f86d6, #1e6bb8);
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.container-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-conteudo {
+  flex: 1;
+}
+
+.banner-conteudo h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.banner-conteudo p {
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.banner-imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.banner-imagem img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.secao-informacoes {
+  padding: 100px 0;
+}
+
+.secao-informacoes h2,
+.titulo-planos h2 {
+  font-size: 38px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #233032;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-informacoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card-informacoes {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.card-informacoes:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-informacoes img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.card-informacoes h3 {
+  font-size: 22px;
+  color: #233032;
+  margin-bottom: 15px;
+}
+
+.card-informacoes p {
+  color: #233032;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.secao-planos {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.titulo-planos {
+  margin-bottom: 60px;
+}
+
+.tabela-responsive {
+  overflow-x: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secao-planos table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  min-width: 600px;
+}
+
+.secao-planos th,
+.secao-planos td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+.secao-planos th {
+  background: linear-gradient(135deg, #2f86d6, #1e6bb8);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.secao-planos td {
+  font-size: 16px;
+  color: #233032;
+}
+
+.secao-planos tr.linha-impar {
+  background-color: #f9f9f9;
+}
+
+.secao-planos tr:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.secao-primeiro-anuncio {
+  background: linear-gradient(135deg, #23303e, #1a252f);
+  padding: 60px 0;
+}
+
+.secao-segundo-anuncio {
+  background: linear-gradient(135deg, #2f86d6, #1e6bb8);
+  padding: 60px 0;
+}
+
+.container-primeiro-anuncio,
+.container-segundo-anuncio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.anuncio-conteudo {
+  flex: 1;
+}
+
+.container-primeiro-anuncio h2,
+.container-primeiro-anuncio p,
+.container-segundo-anuncio h2,
+.container-segundo-anuncio p {
+  color: #ffffff;
+}
+
+.container-primeiro-anuncio h2,
+.container-segundo-anuncio h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.container-primeiro-anuncio p,
+.container-segundo-anuncio p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.container-primeiro-anuncio a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #2f86d6;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  white-space: nowrap;
+}
+
+.container-segundo-anuncio a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #23303e;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  white-space: nowrap;
+}
+
+footer {
+  background: linear-gradient(135deg, #f1f3f7, #e8ecf0);
+}
+
+.rodape-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.rodape-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rodape-logo h1 {
+  font-size: 28px;
+  color: #233032;
+}
+
+.rodape-logo p {
+  color: #2f86d6;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container-contatos {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #dddddd;
+}
+
+.container-contatos p {
+  font-size: 16px;
+  color: #233032;
+  margin-bottom: 10px;
+}
+
+.container-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 16px;
+  background-color: #233032;
+  color: #ffffff;
+}
+
+.container-copyright .destaque {
+  color: #2f86d6;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .limitar-secao {
+    padding: 0 15px;
+  }
+
+  .container-topo {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .topo-logo {
+    flex: 1;
+  }
+
+  .topo-logo h1 {
+    font-size: 24px;
+  }
+
+  .topo-logo p {
+    font-size: 14px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .topo-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .topo-links.active {
+    display: flex;
+  }
+
+  .topo-links a {
+    padding: 15px 0;
+    border-bottom: 1px solid #dddddd;
+    font-size: 16px;
+  }
+
+  .secao-banner {
+    padding: 60px 0;
+  }
+
+  .container-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .banner-conteudo h2 {
+    font-size: 28px;
+  }
+
+  .banner-conteudo p {
+    font-size: 16px;
+  }
+
+  .secao-informacoes {
+    padding: 60px 0;
+  }
+
+  .secao-informacoes h2,
+  .titulo-planos h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .container-informacoes {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-informacoes {
+    padding: 25px 15px;
+  }
+
+  .card-informacoes img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-informacoes h3 {
+    font-size: 20px;
+  }
+
+  .secao-planos {
+    padding: 60px 0;
+  }
+
+  .tabela-responsive {
+    margin: 0 -15px;
+  }
+
+  .secao-planos th,
+  .secao-planos td {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  .secao-planos th {
+    font-size: 14px;
+  }
+
+  .secao-primeiro-anuncio,
+  .secao-segundo-anuncio {
+    padding: 40px 0;
+  }
+
+  .container-primeiro-anuncio,
+  .container-segundo-anuncio {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .container-primeiro-anuncio h2,
+  .container-segundo-anuncio h2 {
+    font-size: 24px;
+  }
+
+  .container-primeiro-anuncio p,
+  .container-segundo-anuncio p {
+    font-size: 16px;
+  }
+
+  .btn-anuncio {
+    padding: 15px 25px;
+    font-size: 16px;
+    min-width: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rodape-logo {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .rodape-logo h1 {
+    font-size: 22px;
+  }
+
+  .container-contatos {
+    padding: 25px 0;
+  }
+
+  .container-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .topo-logo img,
+  .rodape-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .topo-logo h1 {
+    font-size: 20px;
+  }
+
+  .banner-conteudo h2 {
+    font-size: 24px;
+  }
+
+  .secao-informacoes h2,
+  .titulo-planos h2 {
+    font-size: 22px;
+  }
+
+  .container-primeiro-anuncio h2,
+  .container-segundo-anuncio h2 {
+    font-size: 20px;
+  }
+
+  .card-informacoes h3 {
+    font-size: 18px;
+  }
+
+  .secao-planos th,
+  .secao-planos td {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+}

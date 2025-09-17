@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.destaque {
+  color: #2f86d6;
+}
+
+.limitar-secao {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-topo {
+  background: linear-gradient(135deg, #f1f3f7, #e8ecf0);
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topo-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.topo-nome h1 {
+  font-size: 32px;
+  color: #233032;
+  margin: 0;
+}
+
+.topo-nome p {
+  color: #2f86d6;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.topo-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.topo-links a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #233032;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.topo-links a:hover {
+  color: #2f86d6;
+}
+
+.topo-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #2f86d6;
+  transition: all 0.3s ease;
+}
+
+.topo-links a:hover::after {
+  width: 100%;
+}
+
+.container-precos {
+  padding: 60px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container-precos table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.celula-escondida {
+  background: transparent;
+  border: none;
+  width: 200px;
+}
+
+.celula-cabecalho {
+  background: linear-gradient(135deg, #2f86d6, #1e6bb8);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+
+.celula-cabecalho p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.celula-cabecalho h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.primeira-celula {
+  background: linear-gradient(135deg, #f1f3f7, #e8ecf0);
+  font-weight: 600;
+  color: #233032;
+  padding: 20px;
+  text-align: left;
+  border-right: 2px solid #dddddd;
+  font-size: 14px;
+  width: 200px;
+}
+
+.container-precos td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  font-size: 14px;
+  color: #233032;
+  font-weight: 500;
+}
+
+.container-precos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container-precos tr:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+.marcador-azul {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #2f86d6, #1e6bb8);
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.marcador-azul::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer {
+  background: linear-gradient(135deg, #f1f3f7, #e8ecf0);
+  margin-top: 60px;
+}
+
+.rodape-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.rodape-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.rodape-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.rodape-logo h1 {
+  font-size: 28px;
+  color: #233032;
+  margin: 0;
+}
+
+.rodape-logo p {
+  color: #2f86d6;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.container-contatos {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #dddddd;
+}
+
+.container-contatos p {
+  font-size: 16px;
+  color: #233032;
+  margin-bottom: 10px;
+}
+
+.container-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 16px;
+  background-color: #233032;
+  color: #fff;
+}
+
+.container-copyright .destaque {
+  color: #2f86d6;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .limitar-secao {
+    padding: 0 15px;
+  }
+
+  .container-topo {
+    padding: 15px 0;
+  }
+
+  .topo-conteudo {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .topo-logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topo-nome h1 {
+    font-size: 24px;
+  }
+
+  .topo-nome p {
+    font-size: 14px;
+  }
+
+  .topo-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .topo-links a {
+    font-size: 16px;
+  }
+
+  .container-precos {
+    padding: 40px 0;
+    margin: 0 -15px;
+  }
+
+  .container-precos table {
+    min-width: 600px;
+  }
+
+  .celula-escondida {
+    width: 150px;
+  }
+
+  .primeira-celula {
+    width: 150px;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  .celula-cabecalho {
+    padding: 20px 10px;
+  }
+
+  .celula-cabecalho p {
+    font-size: 12px;
+  }
+
+  .celula-cabecalho h2 {
+    font-size: 20px;
+  }
+
+  .container-precos td {
+    padding: 15px 8px;
+    font-size: 12px;
+  }
+
+  .marcador-azul {
+    width: 16px;
+    height: 16px;
+  }
+
+  .marcador-azul::after {
+    font-size: 10px;
+  }
+
+  .rodape-logo {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+    gap: 10px;
+  }
+
+  .rodape-logo h1 {
+    font-size: 22px;
+  }
+
+  .container-contatos {
+    padding: 25px 0;
+  }
+
+  .container-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .topo-logo img,
+  .rodape-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .topo-nome h1 {
+    font-size: 20px;
+  }
+
+  .topo-links a {
+    font-size: 14px;
+  }
+
+  .container-precos {
+    padding: 30px 0;
+  }
+
+  .container-precos table {
+    min-width: 500px;
+  }
+
+  .celula-escondida {
+    width: 120px;
+  }
+
+  .primeira-celula {
+    width: 120px;
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+
+  .celula-cabecalho {
+    padding: 15px 8px;
+  }
+
+  .celula-cabecalho p {
+    font-size: 11px;
+  }
+
+  .celula-cabecalho h2 {
+    font-size: 18px;
+  }
+
+  .container-precos td {
+    padding: 12px 6px;
+    font-size: 11px;
+  }
+
+  .marcador-azul {
+    width: 14px;
+    height: 14px;
+  }
+
+  .marcador-azul::after {
+    font-size: 9px;
+  }
+
+  .rodape-logo h1 {
+    font-size: 18px;
+  }
+
+  .container-contatos p {
+    font-size: 14px;
+  }
+
+  .container-copyright {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+
+  .container-precos tr:nth-child(even) {
+    background-color: #2a2a2a;
+  }
+
+  .container-precos tr:hover {
+    background-color: #333333;
+  }
+
+  footer {
+    background: linear-gradient(135deg, #2a2a2a, #333333);
+  }
+}
