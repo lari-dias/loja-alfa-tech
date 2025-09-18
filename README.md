@@ -17,15 +17,15 @@ Projeto de desenvolvimento de uma landing page moderna, responsiva e funcional p
 
 ## ✨ Destaques do Projeto
 
-- ✅ Estrutura HTML semântica e organizada;
-- 📱 Design 100% responsivo, com foco na experiência do usuário;
-- 💸 Comparativo interativo de planos e preços;
-- 🛡️ Apresentação dos diferenciais competitivos:
+- Estrutura HTML semântica e organizada;
+- Design 100% responsivo, com foco na experiência do usuário;
+- Comparativo interativo de planos e preços;
+- Apresentação dos diferenciais competitivos:
 - Suporte 24h;
 - Servidores estáveis;
 - Facilidade de uso;
-- 🔤 Identidade visual consistente com Google Fonts (Poppins);
-- 🧭 Navegação fluida e seções bem definidas.
+- Identidade visual consistente com Google Fonts (Poppins);
+- Navegação fluida e seções bem definidas.
 
 ## 🧠 O que você vai encontrar nesse projeto
 
